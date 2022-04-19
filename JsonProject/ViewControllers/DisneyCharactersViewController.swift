@@ -9,15 +9,10 @@ import UIKit
 
 class DisneyCharactersViewController: UITableViewController {
     
-//    private var disneyData: DisneyData?
-//    private let urlString = "https://api.disneyapi.dev/characters"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 110
     }
-
-    // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         NetworkManager.shared.disneyData?.data?.count ?? 0
@@ -29,23 +24,4 @@ class DisneyCharactersViewController: UITableViewController {
         cell.configure(with: character)
         return cell
     }
-
-//    func fetchData() {
-//        guard let url = URL(string: urlString) else { return }
-//        URLSession.shared.dataTask(with: url) { data, _, error in
-//            guard let data = data else {
-//                print(error?.localizedDescription ?? "No error description")
-//                return
-//            }
-//            do {
-//                self.disneyData = try JSONDecoder().decode(DisneyData.self, from: data)
-//                DispatchQueue.main.async {
-//                    self.tableView.reloadData()
-//                }
-//            } catch let error {
-//                print(error.localizedDescription)
-//            }
-//        }.resume()
-//    }
-
 }

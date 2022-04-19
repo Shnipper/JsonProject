@@ -10,12 +10,11 @@ import Foundation
 class NetworkManager {
 
     static var shared = NetworkManager()
-
-    private let urlString = "https://api.disneyapi.dev/characters"
+    
     var disneyData: DisneyData?
 
     func fetchData() {
-        guard let url = URL(string: urlString) else { return }
+        guard let url = URL(string: "https://api.disneyapi.dev/characters") else { return }
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error description")
@@ -30,5 +29,4 @@ class NetworkManager {
     }
 
     private init() {}
-
 }
