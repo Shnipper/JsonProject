@@ -3,57 +3,10 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="JsonProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4J-EL-cVO">
-                                <rect key="frame" x="32" y="411" width="350" height="74"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Show me the best characters in the World">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" metaFont="system" size="25"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="fA2-Dc-ZGG" kind="show" id="4fZ-xV-JG8"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="J4J-EL-cVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1tV-sx-5dS"/>
-                            <constraint firstItem="J4J-EL-cVO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="H2Y-fo-A4a"/>
-                            <constraint firstItem="J4J-EL-cVO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TDe-pk-rki"/>
-                            <constraint firstAttribute="trailing" secondItem="J4J-EL-cVO" secondAttribute="trailing" constant="32" id="eee-uU-PXO"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="xhN-El-JeG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="583" y="94"/>
-        </scene>
         <!--Disney characters-->
         <scene sceneID="p8w-Fy-Aix">
             <objects>
@@ -112,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RpG-xD-aan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521.7391304347827" y="93.75"/>
+            <point key="canvasLocation" x="594" y="-1360"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cPO-Iv-JlM">
@@ -125,12 +78,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LBv-H4-QtZ"/>
+                        <segue destination="fA2-Dc-ZGG" kind="relationship" relationship="rootViewController" id="eId-mr-5OX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xU-nv-4pS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291" y="94"/>
+            <point key="canvasLocation" x="-403" y="-1360"/>
         </scene>
     </scenes>
     <resources>

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A5C844C2280EF6A500B390C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C844C1280EF6A500B390C5 /* AppDelegate.swift */; };
 		A5C844C4280EF6A500B390C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C844C3280EF6A500B390C5 /* SceneDelegate.swift */; };
-		A5C844C6280EF6A500B390C5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C844C5280EF6A500B390C5 /* MainViewController.swift */; };
 		A5C844C9280EF6A500B390C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C844C7280EF6A500B390C5 /* Main.storyboard */; };
 		A5C844CB280EF6A600B390C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C844CA280EF6A600B390C5 /* Assets.xcassets */; };
 		A5C844CE280EF6A600B390C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C844CC280EF6A600B390C5 /* LaunchScreen.storyboard */; };
@@ -17,13 +16,15 @@
 		A5C844DA280F193500B390C5 /* DisneyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C844D9280F193500B390C5 /* DisneyModels.swift */; };
 		A5C844DC280F1CF200B390C5 /* DisneyCharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C844DB280F1CF200B390C5 /* DisneyCharacterCell.swift */; };
 		A5C844E4280F303000B390C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C844E3280F303000B390C5 /* NetworkManager.swift */; };
+		D011EE61B2133EE8521E3ADF /* Pods_JsonProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF48843D7978C1D2217A295 /* Pods_JsonProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0F960E0068241FB06ABF35 /* Pods-JsonProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonProject.debug.xcconfig"; path = "Target Support Files/Pods-JsonProject/Pods-JsonProject.debug.xcconfig"; sourceTree = "<group>"; };
+		7788BFA9B00DC22FAB8D075A /* Pods-JsonProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonProject.release.xcconfig"; path = "Target Support Files/Pods-JsonProject/Pods-JsonProject.release.xcconfig"; sourceTree = "<group>"; };
 		A5C844BE280EF6A500B390C5 /* JsonProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C844C1280EF6A500B390C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C844C3280EF6A500B390C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5C844C5280EF6A500B390C5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A5C844C8280EF6A500B390C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5C844CA280EF6A600B390C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C844CD280EF6A600B390C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		A5C844D9280F193500B390C5 /* DisneyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyModels.swift; sourceTree = "<group>"; };
 		A5C844DB280F1CF200B390C5 /* DisneyCharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacterCell.swift; sourceTree = "<group>"; };
 		A5C844E3280F303000B390C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DFF48843D7978C1D2217A295 /* Pods_JsonProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D011EE61B2133EE8521E3ADF /* Pods_JsonProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		593E6C97E3E101B44C5B9B80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D0F960E0068241FB06ABF35 /* Pods-JsonProject.debug.xcconfig */,
+				7788BFA9B00DC22FAB8D075A /* Pods-JsonProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A5C844B5280EF6A500B390C5 = {
 			isa = PBXGroup;
 			children = (
 				A5C844C0280EF6A500B390C5 /* JsonProject */,
 				A5C844BF280EF6A500B390C5 /* Products */,
+				593E6C97E3E101B44C5B9B80 /* Pods */,
+				B80717EA2332801F28DD8359 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +92,6 @@
 		A5C844DD280F2F3F00B390C5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A5C844C5280EF6A500B390C5 /* MainViewController.swift */,
 				A5C844D5280F095A00B390C5 /* DisneyCharactersViewController.swift */,
 			);
 			path = ViewControllers;
@@ -135,6 +148,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		B80717EA2332801F28DD8359 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFF48843D7978C1D2217A295 /* Pods_JsonProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5C844D2280EF6A600B390C5 /* Build configuration list for PBXNativeTarget "JsonProject" */;
 			buildPhases = (
+				1EF1E1F5591E0349648A6E2C /* [CP] Check Pods Manifest.lock */,
 				A5C844BA280EF6A500B390C5 /* Sources */,
 				A5C844BB280EF6A500B390C5 /* Frameworks */,
 				A5C844BC280EF6A500B390C5 /* Resources */,
+				0C6A3C93F3175C3BBBB770ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,12 +224,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C6A3C93F3175C3BBBB770ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JsonProject/Pods-JsonProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JsonProject/Pods-JsonProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JsonProject/Pods-JsonProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EF1E1F5591E0349648A6E2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JsonProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5C844BA280EF6A500B390C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C844C6280EF6A500B390C5 /* MainViewController.swift in Sources */,
 				A5C844DC280F1CF200B390C5 /* DisneyCharacterCell.swift in Sources */,
 				A5C844DA280F193500B390C5 /* DisneyModels.swift in Sources */,
 				A5C844C2280EF6A500B390C5 /* AppDelegate.swift in Sources */,
@@ -354,6 +418,7 @@
 		};
 		A5C844D3280EF6A600B390C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D0F960E0068241FB06ABF35 /* Pods-JsonProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +446,7 @@
 		};
 		A5C844D4280EF6A600B390C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7788BFA9B00DC22FAB8D075A /* Pods-JsonProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

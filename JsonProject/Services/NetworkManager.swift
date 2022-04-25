@@ -9,21 +9,23 @@ import Foundation
 
 class NetworkManager {
 
-    static var shared = NetworkManager()
-    
-    var disneyData: DisneyData?
+    static let shared = NetworkManager()
 
-    func fetchData() {
-        guard let url = URL(string: "https://api.disneyapi.dev/characters") else { return }
+    func fetchData(from url: String?, with completion: @escaping(DisneyData) -> Void) {
+        guard let stringUrl = url else { return }
+        guard let url = URL(string: stringUrl) else { return }
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
             do {
-                self.disneyData = try JSONDecoder().decode(DisneyData.self, from: data)
+                let disneyData = try JSONDecoder().decode(DisneyData.self, from: data)
+                DispatchQueue.main.async {
+                    completion(disneyData)
+                }
             } catch let error {
-                print(error.localizedDescription)
+                print(error)
             }
         }.resume()
     }
