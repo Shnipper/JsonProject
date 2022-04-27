@@ -13,13 +13,15 @@ class DisneyCharacterCell: UITableViewCell {
     @IBOutlet var characterNameLabel: UILabel!
     
     func configure(with disneyCharacter: DisneyCharacter) {
+        
         characterNameLabel.text = disneyCharacter.name
         
-        DispatchQueue.global().async {
-            guard let url = URL(string: disneyCharacter.imageUrl ?? "") else { return }
-            guard let imageData = try? Data(contentsOf: url) else { return }
-            DispatchQueue.main.async {
+        NetworkManager.shared.fetchImage(from: disneyCharacter.imageUrl) { result in
+            switch result {
+            case .success(let imageData):
                 self.characterImage.image = UIImage(data: imageData)
+            case .failure(let error):
+                print(error)
             }
         }
     }
